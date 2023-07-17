@@ -1,0 +1,28 @@
+#creating class
+
+class Calculator: 
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def add(self):
+        return self.a + self.b
+
+    def subtract(self):
+        return self.a - self.b
+
+    def multiply(self):
+        return self.a * self.b
+
+    def divide(self):
+        if self.b != 0:
+            return self.a / self.b
+        else:
+            return "Cannot divide by zero"
+
+
+calculator = Calculator(5.0, 2.0)
+print(calculator.add())      # Output: 7.0
+print(calculator.subtract()) # Output: 3.0
+print(calculator.multiply()) # Output: 10.0
+print(calculator.divide())   # Output: 2.5
